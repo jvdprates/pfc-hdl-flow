@@ -17,9 +17,13 @@ function AboutTransitionSettings() {
         src="/images/transition_settings.png"
       />
       <p>
-        Note: The <b>Transition 0</b> (the one that comes from the Start Node)
-        cannot be edited. As it will always lead to the <b>Initial State </b>
-        unconditionally.
+        Note: The reset connection (the one that comes from the Reset Node) is
+        not a transition. It&apos;s job is just to point to the initial State.
+      </p>
+      <p>
+        A transition represents a condition for the source State to move to the
+        target State in the FSM. If the logic defined here returns true, then
+        the State Transition will happen on the rising edge of the FSM clock.
       </p>
       <p>Here you can:</p>
       <p>
